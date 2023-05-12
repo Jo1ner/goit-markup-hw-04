@@ -154,7 +154,12 @@ img {
 /* ================= MAIN ================*/
 
 .hero {
+  background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
+    url(../images/hero/people-office-1.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
   background-color: #2e2f42;
+
   padding-top: 188px;
   padding-bottom: 188px;
 }
@@ -209,6 +214,20 @@ img {
 }
 .benefits-list-item {
   width: calc((100% - 72px) / 4);
+}
+
+.benefits-icon {
+  fill: var(--secondary-text-color);
+  width: 64px;
+  height: 64px;
+}
+
+.benefits-list-icon {
+  padding: 24px 100px;
+  margin-bottom: 8px;
+
+  background-color: var(--light-mode);
+  border-radius: 4px;
 }
 
 .benefits-subtitle {
@@ -266,7 +285,9 @@ img {
   color: var(--secondary-text-color);
 }
 .subtitle-desc {
+  margin-bottom: 8px;
   text-align: center;
+
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
@@ -278,15 +299,92 @@ img {
 }
 
 .section-cards-item {
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16),
+    0px 2px 1px rgba(46, 47, 66, 0.08);
   border-radius: 0px 0px 4px 4px;
   flex-basis: calc((100%-72px) / 4);
 
   background-color: var(--white-color);
 }
+
+.social-networks {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.social-networks-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: var(--accent-color);
+  color: var(--light-mode);
+}
+
+.social-networks-link:hover,
+.social-networks-link:active {
+  background-color: var(--hover-color);
+}
+
+.social-networks-icon {
+  width: 16px;
+  height: 16px;
+  fill: currentColor;
+}
+
+.company-section {
+  display: flex;
+  gap: 24px;
+}
+
+.company-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 168px;
+  height: 88px;
+  border: 1px solid #8e8f99;
+  border-radius: 4px;
+  color: #8e8f99;
+}
+
+.company-list:hover,
+.company-list:active {
+  color: var(--hover-color);
+  border: 1px solid var(--hover-color);
+}
+
+.company-icon {
+  width: 104px;
+  height: 56px;
+  fill: currentColor;
+}
+
 /* ======================= FOOTER ==================== */
+
+footer > .container {
+  display: flex;
+}
 
 .logo-light-theme {
   color: #f4f4fd;
+}
+
+.footer-social {
+  margin-left: 120px;
+}
+
+.social-text {
+  margin-bottom: 16px;
+
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: var(--white-color);
 }
 
 .footer-logo {
@@ -306,6 +404,16 @@ img {
   padding-bottom: 100px;
 
   background-color: #2e2f42;
+}
+
+.footer-social-networks-icon {
+  width: 24px;
+  height: 24px;
+  fill: currentColor;
+}
+footer .social-networks-link:hover,
+footer .social-networks-link:active {
+  background-color: #31d0aa;
 }
 /* ==================  PORTFOLIO.HTML ================= */
 
@@ -341,6 +449,8 @@ img {
 .filter-btn:hover,
 .filter-btn:focus {
   border: 1px solid transparent;
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
 
   font-weight: 500;
   font-size: 16px;
@@ -363,6 +473,12 @@ img {
 
 .work-examples-list-item {
   width: calc((100% - 48px) / 3);
+}
+
+.work-examples-list-item:hover,
+.work-examples-list-item:active {
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16),
+    0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 
 .examples-subtitle {
