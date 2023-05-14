@@ -75,6 +75,8 @@ img {
   padding-top: 24px;
   padding-bottom: 24px;
   border-bottom: 1px solid #e7e9fc;
+  box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16),
+    0px 1px 6px rgba(46, 47, 66, 0.08);
 }
 
 .page-header-container {
@@ -158,8 +160,12 @@ img {
     url(../images/hero/people-office-1.jpg);
   background-repeat: no-repeat;
   background-position: center;
+  background-size: cover;
   background-color: #2e2f42;
 
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1440px;
   padding-top: 188px;
   padding-bottom: 188px;
 }
@@ -218,12 +224,13 @@ img {
 
 .benefits-icon {
   fill: var(--secondary-text-color);
-  width: 64px;
-  height: 64px;
 }
 
 .benefits-list-icon {
-  padding: 24px 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 112px;
   margin-bottom: 8px;
 
   background-color: var(--light-mode);
@@ -258,7 +265,7 @@ img {
   margin-bottom: 72px;
 
   font-size: 36px;
-  line-height: 1.11;
+  line-height: 1.1;
   text-align: center;
   letter-spacing: 0.02em;
   text-transform: capitalize;
@@ -271,7 +278,7 @@ img {
 }
 
 .employees-list-text {
-  padding: 32px 16px;
+  padding: 32px 0;
 }
 
 .subtitle {
@@ -310,7 +317,10 @@ img {
 .social-networks {
   display: flex;
   justify-content: center;
-  gap: 10px;
+  gap: 24px;
+}
+
+.social-networks-item {
 }
 
 .social-networks-link {
@@ -319,6 +329,7 @@ img {
   align-items: center;
   width: 40px;
   height: 40px;
+
   border-radius: 50%;
   background-color: var(--accent-color);
   color: var(--light-mode);
@@ -330,8 +341,6 @@ img {
 }
 
 .social-networks-icon {
-  width: 16px;
-  height: 16px;
   fill: currentColor;
 }
 
@@ -340,41 +349,49 @@ img {
   gap: 24px;
 }
 
-.company-list {
+.company-list-link {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 168px;
-  height: 88px;
+  width: 100%;
+  height: 100%;
   border: 1px solid #8e8f99;
   border-radius: 4px;
   color: #8e8f99;
 }
 
-.company-list:hover,
-.company-list:active {
+.company-list-link:hover {
   color: var(--hover-color);
-  border: 1px solid var(--hover-color);
+  border-color: var(--hover-color);
+}
+
+.company-list-link:active {
+  color: var(--hover-color);
+  border-color: var(--hover-color);
+}
+
+.company-list {
+  width: calc((100% - 120px) / 6);
+  height: 88px;
 }
 
 .company-icon {
-  width: 104px;
-  height: 56px;
   fill: currentColor;
 }
 
 /* ======================= FOOTER ==================== */
 
-footer > .container {
+.footer-container {
   display: flex;
+  align-items: baseline;
 }
 
 .logo-light-theme {
   color: #f4f4fd;
 }
 
-.footer-social {
-  margin-left: 120px;
+.page-footer-logo {
+  margin-right: 120px;
 }
 
 .social-text {
@@ -406,9 +423,11 @@ footer > .container {
   background-color: #2e2f42;
 }
 
+footer .social-networks {
+  gap: 16px;
+}
+
 .footer-social-networks-icon {
-  width: 24px;
-  height: 24px;
   fill: currentColor;
 }
 footer .social-networks-link:hover,
