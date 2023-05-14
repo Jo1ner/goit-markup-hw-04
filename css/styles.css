@@ -337,10 +337,7 @@ img {
   color: var(--light-mode);
 }
 
-.social-networks-link:hover {
-  background-color: var(--hover-color);
-}
-
+.social-networks-link:hover,
 .social-networks-link:focus {
   background-color: var(--hover-color);
 }
@@ -365,11 +362,7 @@ img {
   color: #8e8f99;
 }
 
-.company-list-link:hover {
-  color: var(--hover-color);
-  border-color: var(--hover-color);
-}
-
+.company-list-link:hover,
 .company-list-link:focus {
   color: var(--hover-color);
   border-color: var(--hover-color);
