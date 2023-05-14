@@ -339,6 +339,7 @@ img {
 
 .social-networks-link:hover,
 .social-networks-link:focus {
+  outline: none;
   background-color: var(--hover-color);
 }
 
@@ -365,6 +366,7 @@ img {
 .company-list-link:hover,
 .company-list-link:focus {
   color: var(--hover-color);
+  outline: none;
   border-color: var(--hover-color);
 }
 
@@ -431,6 +433,7 @@ footer .social-networks {
 footer .social-networks-link:hover,
 footer .social-networks-link:focus {
   background-color: #31d0aa;
+  outline: none;
 }
 /* ==================  PORTFOLIO.HTML ================= */
 
